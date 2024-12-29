@@ -70,10 +70,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: target/release/your-binary-name
+          files: target/release/guess-game
 
       # Upload the release asset
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
         with:
-          files: target/release/your-binary-name
+          files: target/release/guess-game
